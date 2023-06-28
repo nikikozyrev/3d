@@ -1,0 +1,459 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+:root {
+  --blue-color: #3f2aff;
+  --white-color: #fff;
+  --black-color: #2e2b44;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto-Bold"),
+    url("../fonts/Roboto-Bold.woff2") format("woff2"),
+    url("../fonts/Roboto-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto-Regular"),
+    url("../fonts/Roboto-Regular.woff2") format("woff2"),
+    url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.page {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  min-width: 300px;
+}
+
+.container {
+  max-width: 1190px;
+  padding: 0 40px;
+}
+
+.button {
+  width: 202px;
+  height: 60px;
+  padding: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--white-color);
+  background-color: var(--blue-color);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+}
+
+/*header*/
+
+.header {
+  background-color: var(--blue-color);
+}
+
+.logo {
+  width: 94px;
+  height: 21px;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  gap: 57px;
+}
+
+.nav__item {
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--white-color);
+}
+
+.burger {
+  position: relative;
+  display: none;
+  width: 21px;
+  height: 19px;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.burger__line {
+  display: block;
+  position: absolute;
+  background-color: var(--white-color);
+  width: 21px;
+  height: 2px;
+  border-radius: 5px;
+}
+
+.burger__line:first-child {
+  top: 2px;
+  left: -5px;
+}
+
+.burger__line:nth-child(2) {
+  top: 45%;
+  left: -5px;
+}
+
+.burger__line:last-child {
+  bottom: 2px;
+  left: -5px;
+}
+
+/*hero*/
+
+.hero {
+  background: -o-radial-gradient(67.78% 55.93%, 44.07% 44.07%, #555681 0%, #212133 100%);
+  background: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
+}
+
+.hero__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.hero__title {
+  margin-bottom: 28px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 100%;
+  color: var(--white-color);
+}
+
+.hero__descr {
+  margin-bottom: 62px;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--white-color);
+}
+
+.hero__content {
+  width: 460px;
+  padding: 131px 10px 131px 0;
+}
+
+.hero__back-img {
+  width: 57%;
+  height: auto;
+  background-image: url(../img/hero-1110.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.hero__btn {
+  width: 270px;
+  height: 69px;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 0;
+  font-weight: 700;
+  color: var(--white-color);
+  background-color: var(--blue-color);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/*benefits*/
+
+.benefits__container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.benefits__top-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 775px;
+  margin-bottom: 24px;
+}
+
+.benefits__back-img-1 {
+  width: 160px;
+  height: 142px;
+  margin-right: 30px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  background-image: url(../img/benefits-1.png);
+}
+
+.benefits__back-img-2 {
+  background-image: url(../img/benefits-2.png);
+}
+
+.benefits__back-img-3 {
+  background-image: url(../img/benefits-3.png);
+}
+
+.benefits__back-img-4 {
+  background-image: url(../img/benefits-4.png);
+}
+
+.benefits__back-img {
+  width: 80px;
+  height: 80px;
+  margin-right: 28px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  background-repeat: no-repeat;
+}
+
+.benefits__title {
+  max-width: 380px;
+  margin-bottom: 16px;
+  color: var(--black-color);
+}
+
+.top-block__descr {
+  font-size: 16px;
+  line-height: 150%;
+  color: #666666;
+}
+
+.benefits__card-descr {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: #666666;
+}
+
+.benefits__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/*masters*/
+
+.masters {
+  background-color: #212133;
+}
+
+.masters__container {
+  padding-top: 73px;
+  padding-bottom: 73px;
+}
+
+.masters__title {
+  margin-bottom: 24px;
+  color: var(--white-color);
+}
+
+.master {
+  overflow: hidden;
+  border-radius: 23px 23px 0px 0px;
+}
+
+.master__photo {
+  margin-bottom: 27px;
+}
+
+.masters__name {
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 6px;
+  color: var(--white-color);
+}
+
+.masters__descr {
+  font-size: 16px;
+  line-height: 150%;
+  color: #85859B;
+}
+
+/*courses*/
+
+.courses__container {
+  padding-top: 75px;
+  padding-bottom: 50px;
+}
+
+.courses__title {
+  margin-bottom: 24px;
+}
+
+.courses-card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: 480px;
+  padding: 210px 15px 30px 30px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% 180px;
+  background-color: #EDF0F9;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.courses-card__time {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  top: 11px;
+  right: 5px;
+  height: 25px;
+  padding-left: 29px;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--white-color);
+  background-image: url(../img/courses-time.png);
+  background-repeat: no-repeat;
+  background-size: 23px 23px;
+}
+
+.courses-card-1 {
+  background-image: url(../img/courses-1-1.jpg);
+}
+
+.courses-card-2 {
+  background-image: url(../img/courses-1-2.jpg);
+}
+
+.courses-card-3 {
+  background-image: url(../img/courses-1-3.jpg);
+}
+
+.courses-card-4 {
+  background-image: url(../img/courses-1-4.jpg);
+}
+
+.courses-card__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: #212133;
+  margin-bottom: 10px;
+}
+
+.courses-card__descr {
+  font-size: 16px;
+  line-height: 150%;
+  color: #666666;
+  margin-bottom: auto;
+}
+
+/*footer*/
+
+.footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 30px;
+  padding-top: 28px;
+  padding-bottom: 24px;
+  background-color: var(--black-color);
+}
+
+.footer__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.footer__copy {
+  font-size: 13px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: var(--black-color)
+}
+
+.copy__icon {
+  color: var(--blue-color);
+}
